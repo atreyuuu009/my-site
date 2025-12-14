@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<button id="themeBtn">Toggle Dark Mode</button>
+
+<table id="layoutTable" cellpadding="20">
+    <tr>
+
+        <td id="leftCol">
+
+            <div id="profile-section">
+                <img class="profile-img" src="images/atreyu.png">
+
+                <h2 class="hello">Gil Atreyu M. Tagaban</h2>
+                <p class="job-title">Student at NUFV</p>
+
+                <button id="editJobBtn">Edit Job Title</button>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>Contact</h3>
+                <p class="contacts">Email: atreyutagaban009@gmail.com</p>
+                <p class="contacts">Phone: 09510751931</p>
+            </div>
+
+            <hr>
+
+            <button id="toggleSkillsBtn">Hide Skills</button>
+
+            <div id="skillsSection">
+                <div id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Figma</li>
+                        <li>Data Structures</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+
+        </td>
+
+        <td id="rightCol">
+
+            <div id="about">
+                <h2>About Me</h2>
+                <p class="aboutText">
+                    Student at NU Fairview, studying Information Technology.  
+                    I want to learn different parts of the IT industry and work a stable, high-paying job.
+                </p>
+            </div>
+
+            <hr>
+
+            <div id="message-section">
+                <h2>Message Me</h2>
+
+                <form class="messageform">
+
+                    Name:<br>
+                    <input type="text" id="nameField"><br><br>
+
+                    Email:<br>
+                    <input type="email" id="emailField"><br><br>
+
+                    Message:<br>
+                    <textarea id="msgBox" maxlength="200"></textarea>
+                    <p>Characters left: <span id="counter">200</span></p>
+
+                    <input type="submit" value="Send" onclick="return validateForm()">
+
+                </form>
+            </div>
+
+        </td>
+
+    </tr>
+</table>
+
+<footer id="footer">
+    WebProg - Web Programming 2025
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>
